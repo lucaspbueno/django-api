@@ -16,6 +16,9 @@ COPY . .
 # Copie o script de inicialização
 COPY entrypoint.sh .
 
+# Torne o entrypoint executável dentro do contêiner
+RUN chmod +x entrypoint.sh
+
 # Exponha a porta que a aplicação vai rodar
 EXPOSE 8000
 
