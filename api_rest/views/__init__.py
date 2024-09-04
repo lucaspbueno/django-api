@@ -1,0 +1,1 @@
+from .equipment_views import EquipmentCreateListView, EquipmentRetriveUpdateDestroyView
