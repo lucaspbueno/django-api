@@ -13,6 +13,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copie todo o código da aplicação para o diretório de trabalho
 COPY . .
 
+# Copie o script de inicialização
+COPY entrypoint.sh .
+
 # Exponha a porta que a aplicação vai rodar
 EXPOSE 8000
 
